@@ -128,6 +128,21 @@
             <!-- 曲线图 start -->
             <div class="main line_chart"></div>
             <script>
+                 function getData() {
+                     let data_xAxis, data_series;
+                     fetch("https://edu.telking.com/api/?type=month")
+                          .then(data => data.json())
+                          .then(data => {
+                               data_xAxis = data.data.xAxis
+                               data_series = data.data.series
+                                   // 执行创建图表，传入对象数据
+                               tubiao(data_xAxis, data_series)
+                          })
+                  }
+
+                  getData();
+
+                function tubiao(xAxis, series) {
                 // 参数 DOM 决定图表最终呈现的位置【初始化echarts实例对象】
                 var mCharts = echarts.init(document.querySelector('.line_chart'))
                 var option1 = {
@@ -218,6 +233,7 @@
                     }]
                 }
                 mCharts.setOption(option1)
+                }
             </script>
             <!-- 曲线图  end -->
 
