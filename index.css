@@ -1,0 +1,385 @@
+/* 1200px 居中显示的版心 */
+
+.main {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* 头部LOGO  start */
+
+header {
+    height: 100px;
+    line-height: 100px;
+}
+
+header span:first-child {
+    width: 105px;
+    height: 30px;
+    margin-top: 35px;
+    background-color: #f92525;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+}
+
+header span:last-child {
+    font-size: 20px;
+    height: 30px;
+    width: 92px;
+    padding-right: 10px;
+}
+
+header button {
+    width: 110px;
+    height: 40px;
+    margin-top: 30px;
+    background-color: #f92525;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+    /* border-color: transparent; */
+}
+
+header button:hover {
+    cursor: pointer;
+}
+
+
+/* 头部LOGO  end */
+
+article {
+    background-color: #f5f8f9;
+}
+
+
+/* 导航栏  start */
+
+nav {
+    height: 170px;
+    /* position: relative; */
+}
+
+nav h1 {
+    font-weight: normal;
+    padding-top: 50px;
+    /* padding-bottom: 15px; */
+}
+
+nav ul {
+    margin-top: 75px;
+    position: relative;
+}
+
+nav ul li {
+    color: #262b2e;
+    font-size: 15px;
+    padding-bottom: 15px;
+    float: left;
+    font-weight: 700;
+    margin-right: 35px;
+    border-bottom: 0px solid #cccfd0;
+}
+
+nav ul li:hover {
+    border-bottom: 2px solid #cccfd0;
+    cursor: pointer;
+}
+
+
+/* nav ul li::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-bottom: 2px solid #cccfd0;
+    transition: .2s all linear;
+}
+
+nav ul li:hover {}
+
+nav ul li:hover::before {
+    left: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+
+nav ul li:hover~nav ul li::before {
+    left: 0;
+} */
+
+nav ul li:last-child {
+    margin-right: 0px;
+}
+
+
+/* 导航栏  end */
+
+
+/* 轮播图+TIME  start */
+
+.banner_time {
+    height: 280px;
+    margin-bottom: 20px;
+}
+
+
+/* 轮播图  start */
+
+.banner_time .banner {
+    width: 535px;
+    height: 260px;
+    border: 10px solid #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner_time .banner ul {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 535px;
+}
+
+.banner_time .banner ul li,
+.banner_time .banner ol li {
+    float: left;
+}
+
+.banner_time .banner ul li a {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 260px;
+}
+
+.banner_time .banner ul li {
+    width: 535px;
+    height: 260px;
+    line-height: 335px;
+    text-align: center;
+}
+
+.banner_time .banner ul li.li_img {
+    background-image: url(./1.jpg);
+}
+
+.banner_time .banner ol {
+    height: 20px;
+    width: 60px;
+    position: absolute;
+    right: 45%;
+    /* margin-left: 30px; */
+    bottom: 10px;
+    /* overflow: hidden; */
+    line-height: 20px;
+    text-align: center;
+}
+
+.banner_time .banner ol li {
+    width: 10px;
+    height: 10px;
+    background-color: #c0c4c6;
+    margin-top: 5px;
+    margin-right: 10px;
+    float: left;
+    cursor: pointer;
+}
+
+.banner_time .banner ol li:hover {
+    height: 12px;
+    background-color: #fff;
+    cursor: pointer;
+    margin-top: 3px;
+}
+
+.banner_time .banner p a {
+    width: 25px;
+    height: 40px;
+    position: absolute;
+    left: 5px;
+    top: 45%;
+    margin-top: -20px;
+    background: #000;
+    cursor: pointer;
+    line-height: 40px;
+    text-align: center;
+    font-weight: bold;
+    font-family: '黑体';
+    font-size: 30px;
+    color: #fff;
+    opacity: 0.3;
+    margin-top: 0;
+    /* border: 1px solid #fff; */
+}
+
+.banner_time .banner #right {
+    /*距离父元素右边5像素*/
+    right: 5px;
+    /*代表把left的值清空（设置为默认值）*/
+    left: auto;
+}
+
+
+/* 轮播图  end */
+
+
+/* TIME start */
+
+.banner_time .time_form {
+    width: 505px;
+    height: 200px;
+    padding: 40px 60px;
+    background-color: #fff;
+}
+
+.banner_time .time_form .form_top span:first-child {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.banner_time .time_form .form_top span:last-child {
+    width: 91px;
+    height: 36px;
+    border: 2px solid #e9e9ea;
+    line-height: 36px;
+    text-align: center;
+    /* margin-right: 60px; */
+    margin: -10px 0;
+}
+
+.banner_time .time_form div:nth-child(2) {
+    border: .5px solid #efeff0;
+    margin: 30px -60px;
+    width: 625px;
+}
+
+.banner_time .time_form .form_bom table thead tr td,
+.banner_time .time_form .form_bom table tbody tr td {
+    /* margin-bottom: 60px; */
+    height: 45px;
+    width: 120px;
+}
+
+.banner_time .time_form .form_bom table thead tr td:nth-child(2),
+.banner_time .time_form .form_bom table tbody tr td:nth-child(2) {
+    width: 260px;
+}
+
+.banner_time .time_form .form_bom table thead tr td:last-child,
+.banner_time .time_form .form_bom table tbody tr td:last-child,
+.banner_time .time_form .form_bom table tbody tr td:last-child {
+    /* margin-right: 10px;
+    width: 60px; */
+    text-align: right;
+}
+
+.banner_time .time_form .form_bom table thead tr td {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 40px;
+    /* text-align: center; */
+}
+
+.banner_time .time_form .form_bom table tbody tr td:last-child {
+    width: 65px;
+    height: 30px;
+    color: #fff;
+    line-height: 30px;
+    text-align: center;
+    background-color: #5dd054;
+}
+
+
+/* TIME end */
+
+
+/* 轮播图+TIME  end */
+
+
+/* 可视化图表  start */
+
+section {
+    height: 750px;
+}
+
+section .line_chart {
+    height: 330px;
+    background-color: #fff;
+    padding-top: 30px;
+}
+
+section .pie_bar {
+    height: 500px;
+    margin: 20px auto 50px;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+section .pie_bar span.pie_chart,
+section .pie_bar span.bar_chart {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding-top: 30px;
+    width: 590px;
+    height: 300px;
+    background-color: #fff;
+}
+
+section .pie_bar span.bar_chart {
+    left: 610px;
+    /* border: 1px solid */
+}
+
+
+/* 可视化图表  end */
+
+
+/* 底部链接  start */
+
+footer {
+    height: 285px;
+    background-color: #202124;
+}
+
+footer div:first-child {
+    height: 225px;
+    color: #fff;
+    /* 测一下 */
+    padding-top: 60px;
+}
+
+footer div:first-child span {
+    /* font-size:  */
+    height: 30px;
+    width: 105px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #f92525;
+    margin-right: 80px;
+}
+
+footer div:first-child dl {
+    float: left;
+    margin-right: 120px;
+}
+
+footer div:first-child dl dd {
+    margin-bottom: 30px;
+    font-style: 10px;
+    /* font-weight: 700; */
+}
+
+footer div:first-child dl dd:hover {
+    border-bottom: 1px solid #fff;
+}
+
+footer div:last-child {
+    height: 35px;
+    background-color: #1c1d20;
+}
+
+
+/* 底部链接  end */

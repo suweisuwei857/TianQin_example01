@@ -1,0 +1,58 @@
+/* 公共的样式文件 */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* 左浮动 */
+
+.fl {
+    float: left;
+}
+
+
+/* 右浮动 */
+
+.fr {
+    float: right;
+}
+
+ul {
+    /* 去掉小圆点 */
+    list-style: none;
+}
+
+ol {
+    /* 去掉序号 */
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    /* 让a标签的字体颜色和普通的div一样 都可以继承父元素的字体颜色  */
+    /* inherit 继承的意思 */
+    color: inherit;
+}
+
+input {}
+
+
+/* 清除浮动 */
+
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    display: table;
+}
+
+.clearfix::after {
+    clear: both;
+}
+
+body {
+    /* background-color: #eee; */
+    color: #666;
+    font-size: 14px;
+}
